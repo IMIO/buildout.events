@@ -3,8 +3,8 @@
 dockerDeliveryPipeline (
   imageName: "smartweb/events",
   productId: "events",
-  updateStagingRundeckJobId: "4ffee35c-a889-4733-a630-bacd57c82e7f",
-  updateRundeckJobId: "2a8d6335-a6ed-423f-a85c-4eca6dec5db4",
-  updateNowRundeckJobId: "2a8d6335-a6ed-423f-a85c-4eca6dec5db4",
+  updateStagingRundeckJobId: "ac704787-1b20-4c52-a832-d2cbdcd9e45f",
+  updateRundeckJobId: "",
+  updateNowRundeckJobId: "",
   suffixEmail: "support-web",
 )
