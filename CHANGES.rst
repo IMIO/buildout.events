@@ -1,4 +1,4 @@
-1.0a2 (unreleased)
+1.0a2 (2022-02-09)
 ------------------
 
 - imio.events.core 1.0a2
