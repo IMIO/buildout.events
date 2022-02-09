@@ -1,6 +1,14 @@
 1.0a2 (unreleased)
 ------------------
 
+- imio.events.core 1.0a2
+
+    - Add event_dates index to handle current events queries correctly
+      [laulaz]
+
+    - Update buildout to use Plone 6.0.0a3 packages versions
+      [boulch]
+
 - Update buildout to use Plone 6.0.0a3 packages versions
   [boulch]
 
