@@ -1,7 +1,8 @@
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add py-spy for debugging.
+  [bsuttor]
 
 
 1.0a2 (2022-02-09)
