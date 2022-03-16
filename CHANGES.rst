@@ -1,11 +1,14 @@
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use https:// instead of git:// protocol
+  See https://github.blog/2021-09-01-improving-git-protocol-security-github/
+  [laulaz]
 
 
 1.0 (2022-03-01)
 ----------------
+
 - Use Gunicorn instead of Waitress.
   [bsuttor]
 
