@@ -1,7 +1,53 @@
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.0a4
+
+    - Ensure objects are marked as modified after appending to a list attribute
+      [laulaz]
+
+    - Fix selected_agendas on events after creating a "linked" agenda
+      [boulch]
+
+- imio.smartweb.common 1.0.7
+
+    - Add connection link in colophon
+      [laulaz]
+
+- imio.smartweb.common 1.0.6
+
+    - Add ban_physicalpath method (taken from policy)
+      [boulch, laulaz]
+
+- imio.smartweb.common 1.0.5
+
+    - Refactor rich description to retrieve html on a any description
+      (from context or from other ways)
+      [boulch]
+
+- imio.smartweb.locales 1.0.6
+
+    - Add Dutch translations files
+      [laulaz]
+
+    - Add faceted map translation
+      [laulaz]
+
+    - Add propose URLs translations
+      [laulaz]
+
+- imio.smartweb.locales 1.0.5
+
+    - Add translation for Agent connection
+      [laulaz]
+
+- imio.smartweb.locales 1.0.4
+
+    - Add translations for contact gallery
+      [laulaz]
+
+    - Add translations for post-it section
+      [laulaz]
 
 
 1.0.4 (2022-07-13)
