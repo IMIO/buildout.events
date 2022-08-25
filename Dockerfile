@@ -73,6 +73,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   rsync \
   wget \
   wv \
+  postgresql-client \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 RUN curl -L https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_amd64.deb > /tmp/dumb-init.deb && dpkg -i /tmp/dumb-init.deb && rm /tmp/dumb-init.deb
