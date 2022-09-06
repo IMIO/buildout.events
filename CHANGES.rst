@@ -1,7 +1,8 @@
 1.0.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Blobs are now on filesystem.
+  [bsuttor]
 
 
 1.0.6-quick (2022-07-18)
