@@ -1,7 +1,13 @@
 1.0.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.0a5
+
+    - Add logging to find cause of infinite loop statement
+      [laulaz]
+
+    - Add eea.faceted.navigable behavior on Entity & Agenda types
+      [laulaz]
 
 
 1.0.7 (2022-09-06)
