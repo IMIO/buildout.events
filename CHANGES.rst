@@ -1,7 +1,16 @@
 1.0.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.0a6
+
+    - WEB-3770 : Add serializer to get included items when you request an imio.events.Event fullbobjects
+      [boulch]
+
+    - WEB-3757 : Automaticaly create some defaults agendas (with agendas subscription) when creating a new entity
+      [boulch]
+
+    - WEB-3726 : Add subjects (keyword) in SearchableText
+      [boulch]
 
 
 1.0.8 (2022-10-18)
