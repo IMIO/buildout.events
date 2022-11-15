@@ -1,6 +1,11 @@
 1.0.10 (unreleased)
 -------------------
 
+- imio.events.core 1.0.1
+
+    - Fix SearchableText index for multilingual
+      [laulaz]
+
 - imio.events.core 1.0
 
     - Add multilingual features: New fields, vocabularies translations, restapi serializer
