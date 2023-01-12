@@ -1,6 +1,50 @@
 1.1.0 (unreleased)
 ------------------
 
+- imio.smartweb.locales 1.1
+
+    - Add DE translations (with copied French sentences for now)
+      [laulaz]
+
+    - Update buildout to Plone 6.0.0 final
+      [laulaz]
+
+- imio.events.core 1.1.1
+
+    - Add new descriptions metadatas and SearchableText indexes for multilingual
+      [laulaz]
+
+- imio.events.policy 1.1.1
+
+    - Install and configure autopublishing (with 15 min tick subscriber)
+      [boulch]
+
+    - Remove obsolete TinyMCE override
+      [laulaz]
+
+    - Remove available languages (we don't need them anymore)
+      [laulaz]
+
+- imio.smartweb.common 1.1.1
+
+    - Allow to choose language for vocabulary term translation
+      [laulaz]
+
+    - Use bootstrap dropdown-toggle for fieldsets collapse icon on edit forms
+      [laulaz]
+
+    - Fix TinyMCE menu bar and format menu
+      [laulaz]
+
+    - Update widget.pt override from plone.app.z3cform.templates
+      [laulaz]
+
+    - Improve monkeypatch to fix TTW resource calling
+      [laulaz]
+
+    - Update buildout to get Plone 6.0.0 final
+      [laulaz]
+
 - imio.smartweb.common 1.1
 
     - Add monkeypatch to fix TTW resource calling See plone/Products.CMFPlone#3705
