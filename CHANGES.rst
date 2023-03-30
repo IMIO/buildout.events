@@ -1,7 +1,18 @@
 1.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.4
+
+    - Fix occurrences expansion calculation for start dates
+      We can't use start/end recurring indexes because they return the next occurrence
+      and not the first one, so recurrence rule cannot be applied on them.
+      [laulaz]
+    
+    - Fix bug calculating event_dates index with occurrences
+      [laulaz]
+
+    - WEB-3908 : Create new endpoint to serve batched events occurrences
+      [boulch]
 
 
 1.2.3-quick (2023-03-20)
