@@ -1,6 +1,13 @@
 1.2.4 (unreleased)
 ------------------
 
+- imio.events.core 1.1.5
+
+    - Need fullobjects in query to avoid "Cannot read properties of undefined (reading 'latitude')" in rest view
+      So, we need to serialize first_start and first_end from obj.start and obj.end. If we don't do that, we got brain.start/end
+      these are updates with first valid event occurence
+      [boulch]
+
 - imio.events.core 1.1.4
 
     - Fix occurrences expansion calculation for start dates
