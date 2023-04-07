@@ -1,7 +1,13 @@
 1.2.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.policy 1.1.2
+
+    - Add module : collective.messagesviewlet
+      [boulch]
+
+    - Migrate to Plone 6.0.2
+      [boulch]
 
 
 1.2.4 (2023-04-02)
