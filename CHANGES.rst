@@ -1,6 +1,14 @@
 1.2.6 (unreleased)
 ------------------
 
+- imio.events.core 1.1.6
+
+    - INFRA-4725 : Add logging to find infinite loop in recurrence calculation
+      [laulaz]
+    
+    - Migrate to Plone 6.0.4
+      [boulch]
+
 - Migrate to Plone 6.0.4
   [boulch]
 
