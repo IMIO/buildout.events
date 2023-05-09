@@ -1,7 +1,8 @@
 1.2.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Rollback to Zope 5.8 for now because of a bug in POST requests with gunicorn
+  [laulaz]
 
 
 1.2.6-quick (2023-05-05)
