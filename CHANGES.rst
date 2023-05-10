@@ -1,5 +1,5 @@
-1.2.7 (unreleased)
-------------------
+1.2.7-quick (2023-05-10)
+------------------------
 
 - Rollback to Zope 5.8 for now because of a bug in POST requests with gunicorn
   [laulaz]
