@@ -1,7 +1,8 @@
 1.2.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- WEB-3781 : Add autopublish script
+  [remdub]
 
 
 1.2.7-quick (2023-05-10)
