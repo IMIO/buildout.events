@@ -1,6 +1,12 @@
 1.2.8 (unreleased)
 ------------------
 
+- imio.events.core 1.1.7
+
+    - Avoid infinite loop with bad recurrence RRULE expression (`INTERVAL=0"`)
+      See https://github.com/plone/plone.formwidget.recurrence/issues/39
+      [laulaz]
+
 - WEB-3781 : Add autopublish script
   [remdub]
 
