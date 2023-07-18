@@ -1,7 +1,10 @@
 1.2.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.8
+
+    - Add logs in endpoint. Help us to find why agenda go slowlier
+      [boulch]
 
 
 1.2.8 (2023-07-03)
