@@ -1,7 +1,10 @@
 1.2.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.9
+
+    - [WEB-3937] Limit event duration to maximum 3 years
+      [boulch, laulaz]
 
 
 1.2.9-quick (2023-07-18)
