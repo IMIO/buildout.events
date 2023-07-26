@@ -1,7 +1,10 @@
 1.2.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.10
+
+    - [WEB-3937] Fix add / edit forms for events
+      [boulch, laulaz]
 
 
 1.2.10 (2023-07-25)
