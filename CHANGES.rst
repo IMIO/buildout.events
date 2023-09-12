@@ -1,6 +1,12 @@
 1.2.12 (unreleased)
 -------------------
 
+- imio.events.core 1.1.11
+
+    - Avoid infinite loop with bad recurrence RRULE expression (`INTERVAL=0"`) - improved
+      See https://github.com/plone/plone.formwidget.recurrence/issues/39
+      [laulaz]
+
 - imio.smartweb.common 1.1.8
 
     - WEB-3960 : Clean unhautorized xml chars out of text when added or modified contents Temporary patch.
