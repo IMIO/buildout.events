@@ -1,7 +1,44 @@
 1.2.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.12
+
+    - WEB-3989 : Fix infinite loop on object deletion & remove logs
+      [laulaz]
+
+- imio.events.core 1.1.11
+
+    - Avoid infinite loop with bad recurrence RRULE expression (INTERVAL=0") - improved See plone/plone.formwidget.recurrence#39
+      [laulaz]
+
+- imio.events.policy 1.1.3
+
+    - WEB-3954 : Hide cropping action on Image type
+      [boulch]
+
+    - Migrate to Plone 6.0.4
+      [boulch]
+
+- imio.smartweb.locales 1.1.5
+
+    - Add missing translations
+      [boulch]
+
+- imio.smartweb.locales 1.1.4
+
+    - Add missing French translation (folder_contents properties)
+      [laulaz]
+
+    - Migrate to Plone 6.0.4
+      [boulch]
+
+- imio.smartweb.common 1.1.9
+
+    - WEB-3974 : Add new registry key (imio.smartweb.common.log) to activate logging in smartweb / auth sources products
+      [boulch]
+
+    - Fix AttributeError in case of instance behaviors attributes that are not on all objects
+      [boulch]
 
 
 1.2.12 (2023-09-13)
