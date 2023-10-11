@@ -1,7 +1,10 @@
 1.2.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.13
+
+    - WEB-3997 : Add cascading agendas subscriptions retrieval in endpoint to get events "by dependency"
+      [boulch]
 
 
 1.2.13 (2023-10-09)
