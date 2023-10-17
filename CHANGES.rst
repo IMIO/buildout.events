@@ -1,7 +1,10 @@
 1.2.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.14
+
+    - WEB-3997 : Fix recursive_generator if agenda A has a reference to agenda B and agenda B has a reference to agenda A
+      [boulch]
 
 
 1.2.14 (2023-10-11)
