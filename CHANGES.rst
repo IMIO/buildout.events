@@ -1,7 +1,13 @@
 1.2.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.1.15
+
+    - WEB-3997 : Fix : Initial agenda must be kept!
+      [boulch]
+
+    - WEB-3997 : Fix : Add condition to avoid getting a broken "_broken_to_path" old/removed agenda
+      [boulch]
 
 
 1.2.15 (2023-10-17)
