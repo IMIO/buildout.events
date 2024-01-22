@@ -1,6 +1,11 @@
 1.3.2 (unreleased)
 ------------------
 
+- imio.events.core 1.2.2
+
+    WEB-3802 : Get dates range for events in REST views. Comming from imio.smartweb.core React view
+    [boulch]
+
 - imio.events.core 1.2.1
 
     - WEB-4041 : Handle new "carre" scale
