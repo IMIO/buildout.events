@@ -1,6 +1,11 @@
 1.3.2 (unreleased)
 ------------------
 
+- imio.events.core 1.2.4
+
+    - WEB-3802 : Fix : Keep events occurrences when start date is smaller than min date but end date is greater than min date
+      [boulch]
+
 - imio.events.core 1.2.3
 
     - WEB-3802 : Manually filter dates to respect range passing into REST request.
