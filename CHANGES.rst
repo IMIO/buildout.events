@@ -1,7 +1,10 @@
 1.3.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.7
+
+    - WEB-4068 : Adding events in any agenda of the current entity
+      [boulch]
 
 
 1.3.4 (2024-03-05)
