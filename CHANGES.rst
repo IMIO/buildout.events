@@ -1,6 +1,11 @@
 1.3.5 (unreleased)
 ------------------
 
+- imio.events.core 1.2.8
+
+    - WEB-4068 : Refactor "adding events in any agenda" : (update translations, add feature : "remove agenda")
+      [boulch]
+
 - imio.events.core 1.2.7
 
     - WEB-4068 : Adding events in any agenda of the current entity
