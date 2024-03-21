@@ -1,10 +1,15 @@
 1.3.5 (unreleased)
 ------------------
 
+- imio.events.core 1.2.10
+
+    - WEB-4068 : Refactor / Fix some issues
+      [boulch] 
+
 - imio.events.core 1.2.9
 
-  - WEB-4068 : Add field to limit the new feature "adding events in any agenda" to some entities
-    [boulch]
+    - WEB-4068 : Add field to limit the new feature "adding events in any agenda" to some entities
+      [boulch]
 
 - imio.events.core 1.2.8
 
