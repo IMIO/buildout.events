@@ -1,6 +1,11 @@
 1.3.5 (unreleased)
 ------------------
 
+- imio.events.core 1.2.11
+
+    - Fix some issues (bad copy/paste!)
+      [boulch] 
+
 - imio.events.core 1.2.10
 
     - WEB-4068 : Refactor / Fix some issues
