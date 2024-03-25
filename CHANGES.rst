@@ -1,6 +1,14 @@
 1.3.5 (unreleased)
 ------------------
 
+- imio.smartweb.locales 1.1.13
+
+    - Add missing fr, nl, de translations
+      [boulch]
+
+    - Update translations
+      [boulch]
+
 - imio.events.core 1.2.11
 
     - Fix some issues (bad copy/paste!)
