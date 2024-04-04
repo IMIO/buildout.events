@@ -1,7 +1,10 @@
 1.3.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.14
+
+    - Fix serializer. Sometimes we have brain, sometines event, agenda or folder...
+      [boulch]
 
 
 1.3.6 (2024-04-04)
