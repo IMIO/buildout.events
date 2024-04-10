@@ -1,6 +1,11 @@
 1.3.8 (unreleased)
 ------------------
 
+- imio.events.core 1.2.15
+
+    - Fix : Keep events where start date is earlier than current date and end date is later than current date (when no period defined)
+      [boulch]
+
 - Migrate to Plone 6.0.9
   [boulch]
 
