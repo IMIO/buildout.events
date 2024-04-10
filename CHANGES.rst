@@ -1,6 +1,9 @@
 1.3.8 (unreleased)
 ------------------
 
+- Update versions of setuptools, wheel, pip, Plone in Dockerfile
+  [boulch]
+
 - imio.events.core 1.2.15
 
     - Fix : Keep events where start date is earlier than current date and end date is later than current date (when no period defined)
