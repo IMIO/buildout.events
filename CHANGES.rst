@@ -1,7 +1,10 @@
 1.3.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.16
+
+    - WEB-4101 : Use local category (if any) instead of category in `category_title` indexer
+      [laulaz]
 
 
 1.3.8 (2024-04-10)
