@@ -1,6 +1,18 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.smartweb.common 1.2.14
+
+    - Fix bundles: Remove obsolete patterns bundle and fix a previous upgrade for
+      eea.facetednavigation
+      [laulaz]
+
+    - Fix translate call (was causing incorrect string in .po file)
+      [laulaz]
+
+    - Fix translation message string
+      [laulaz]
+
 - imio.events.core 1.2.19
 
     - Fix naming of two fields for odwb
