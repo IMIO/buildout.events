@@ -1,6 +1,11 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.events.core 1.2.19
+
+    - Fix naming of two fields for odwb
+      [boulch]
+
 - imio.events.core 1.2.18
 
     - improves odwb fields nomenclature
