@@ -1,6 +1,52 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.smartweb.locales 1.1.17
+    - Add missing fr/de/nl translations for Skip to content/navigation/footer
+      [boulch]
+
+    - Update translations
+      [boulch]
+
+- imio.events.core 1.2.17
+
+    - WEB-4101 : Handle (local) categories translations with datagrid field and new indexes. French value is used as identifier for local categories.
+      [laulaz]
+
+    - WEB-4088 : Cover use case for sending data in odwb for a staging environment
+      [boulch]
+
+    - Fix Topics & Categories in SearchableText translated indexes
+      [laulaz]
+
+    - WEB-4088 : Add some odwb endpoints (for events , for entities)
+      [boulch]
+
+    - WEB-4108 : Prevent removing calendar if there is at least 1 event in it.
+      [boulch]
+
+- imio.smartweb.common 1.2.13
+
+    - WEB-4088 : Cover use case for sending data in odwb for a staging environment
+      [boulch]
+
+    - Ensure translation of vocabularies when used with AjaxSelectFieldWidget
+      [laulaz]
+
+    - Remove useless container_uid from search-filters results
+      [laulaz]
+
+    - WEB-3864 : Ensure that a taxonomy term that is deleted is not used anywhere
+      [boulch]
+
+    - WEB-3862 : Unpatch (restore original) eea.facetednavigation jquery
+      [laulaz]
+
+- imio.smartweb.common 1.2.12
+
+    - WEB-4102 : Add second skip to footer
+      [thomlamb]
+
 - imio.smartweb.common 1.2.11
 
     - WEB-4101 : Fix vocabulary terms translation (for Topics only - for the moment)
