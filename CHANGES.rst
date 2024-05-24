@@ -1,7 +1,18 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.events.core 1.2.18
+
+    - improves odwb fields nomenclature
+      [boulch]
+
+- imio.smartweb.locales 1.1.18
+
+    - Add missing FR translations
+      [laulaz]
+
 - imio.smartweb.locales 1.1.17
+
     - Add missing fr/de/nl translations for Skip to content/navigation/footer
       [boulch]
 
