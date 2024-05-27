@@ -1,6 +1,16 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.events.core 1.2.20
+
+    - WEB-4101 : Add index for local category search
+      [laulaz]
+
+- imio.smartweb.common 1.2.15
+
+    - Fix missing ZCML dependency
+      [laulaz]
+
 - imio.smartweb.common 1.2.14
 
     - Fix bundles: Remove obsolete patterns bundle and fix a previous upgrade for
