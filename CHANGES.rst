@@ -1,6 +1,12 @@
 1.3.9 (unreleased)
 ------------------
 
+- imio.events.core 1.2.21
+
+    - WEB-4101 : Calculate `search-filters` JSON based on `@events` search results logic.
+      We need to refactor & test (more) this module.
+      [laulaz]
+
 - imio.events.core 1.2.20
 
     - WEB-4101 : Add index for local category search
