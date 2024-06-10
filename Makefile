@@ -8,6 +8,9 @@ buildout.cfg:
 
 bin/buildout: bin/pip buildout.cfg
 	bin/pip install -I -r requirements.txt
+	bin/pip install zope.container==4.10
+	bin/pip install AccessControl==5.7
+	bin/pip install setuptools==69.0.2
 
 buildout: bin/instance
 
@@ -15,7 +18,7 @@ bin/instance: bin/buildout
 	bin/buildout
 
 bin/pip:
-	python3 -m venv .
+	python3.8 -m venv .
 
 run: bin/instance
 	bin/instance fg
