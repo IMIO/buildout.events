@@ -1,7 +1,21 @@
 1.3.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.smartweb.locales 1.1.19
+
+    - Add missing fr/de/nl translations for imio.events.core
+      [boulch]
+
+    - Update translations
+      [boulch]
+
+- imio.events.core 1.2.23
+
+    - Add events lead image (preview scale) for odwb and some logs
+      [boulch]
+
+    - Refactor items_to_delete : Added translations / Corrected result of number of items
+      [boulch]
 
 
 1.3.10 (2024-06-10)
