@@ -1,6 +1,9 @@
 1.3.11 (unreleased)
 -------------------
 
+- Upgrade docker image to Ubuntu 22.04
+  [remdub]
+
 - imio.smartweb.locales 1.1.19
 
     - Add missing fr/de/nl translations for imio.events.core
