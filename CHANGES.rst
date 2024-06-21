@@ -1,7 +1,13 @@
 1.3.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.25
+
+    - WEB-4088 : Use transaction commit hook to be sure event object is available before odwb call
+      [boulch]
+
+    - GHA tests on Python 3.8 3.9 and 3.10
+      [remdub]
 
 
 1.3.11-quick (2024-06-21)
