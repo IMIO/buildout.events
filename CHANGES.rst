@@ -4,6 +4,11 @@
 - Upgrade docker image to Ubuntu 22.04
   [remdub]
 
+- imio.events.core 1.2.24
+
+    - WEB-4088 : Use one state workflow for imio.events.Agenda / imio.events.Folder
+      [boulch]
+
 - imio.smartweb.locales 1.1.19
 
     - Add missing fr/de/nl translations for imio.events.core
