@@ -1,7 +1,10 @@
 1.3.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.26
+
+    - WEB-4121 : Add logs if container_uid is None
+      [boulch]
 
 
 1.3.12-quick (2024-06-21)
