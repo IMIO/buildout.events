@@ -1,8 +1,33 @@
-1.3.11 (unreleased)
+1.3.14 (unreleased)
 -------------------
 
 - Upgrade docker image to Ubuntu 22.04
   [remdub]
+
+
+1.3.13 (2024-07-01)
+-------------------
+
+- imio.events.core 1.2.26
+
+    - WEB-4121 : Add logs if container_uid is None
+      [boulch]
+
+
+1.3.12-quick (2024-06-21)
+-------------------------
+
+- imio.events.core 1.2.25
+
+    - WEB-4088 : Use transaction commit hook to be sure event object is available before odwb call
+      [boulch]
+
+    - GHA tests on Python 3.8 3.9 and 3.10
+      [remdub]
+
+
+1.3.11-quick (2024-06-21)
+-------------------------
 
 - imio.events.core 1.2.24
 
