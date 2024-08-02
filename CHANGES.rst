@@ -1,7 +1,10 @@
 1.4.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.27
+
+  - WEB-4130 : Fix bug which forbid to remove events
+    [boulch]
 
 
 1.4.1 (2024-07-31)
