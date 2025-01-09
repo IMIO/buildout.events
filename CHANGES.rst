@@ -1,7 +1,15 @@
 1.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.28
+
+  - WEB-4153 : Add a new cacheRuleset to use with our custom rest endpoints
+    [remdub]
+
+- imio.events.policy 1.1.4
+
+  - WEB-4153: Set moderateCaching for imio.events.core.rest
+    [remdub]
 
 
 1.4.3 (2024-10-14)
