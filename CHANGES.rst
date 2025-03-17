@@ -1,7 +1,16 @@
 1.4.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.29
+
+    - Cache the UserAgendas vocabulary and set pattern_options to start the AJAX query after 3 characters
+      [boulch]
+
+    - Update Python classifiers to be compatible with Python 3.12
+      [remdub]
+
+    - Migrate to Plone 6.0.14
+      [boulch]
 
 
 1.4.8 (2025-02-24)
