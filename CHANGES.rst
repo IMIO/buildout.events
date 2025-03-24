@@ -1,7 +1,11 @@
 1.4.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.30
+
+    - Refactor events endpoint. Try to improve performances : Enhance cache management, 
+      less dates transformations, Use a generator to get occurrences,Remove deepcopy to manage occurrences,...
+      [boulch]
 
 
 1.4.9 (2025-03-19)
