@@ -1,6 +1,11 @@
 1.4.10 (unreleased)
 -------------------
 
+- imio.events.core 1.2.31
+
+    - WEB-4234 : Continue refactoring endpoint. Correct a bug with batching.
+      [boulch]
+
 - imio.events.core 1.2.30
 
     - Refactor events endpoint. Try to improve performances : Enhance cache management, 
