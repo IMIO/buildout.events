@@ -1,7 +1,13 @@
 1.4.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.32
+
+    - WEB-4234 : Refactor agenda subscription (so => events indexing). Try to avoid latency
+      [boulch]
+
+    - Add some logs
+      [boulch]
 
 
 1.4.10 (2025-03-30)
