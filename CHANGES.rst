@@ -6,6 +6,11 @@
     - Update dev environment to Plone 6.1-latest
       [remdub]
 
+- imio.smartweb.common 1.2.31
+
+    - Dirty css fix to hide the "Upload" button in the new pat-contentbrowser
+      [remdub]
+
 - imio.smartweb.common 1.2.30
 
     - Upgrade missing TinyMCE settings to version 7
