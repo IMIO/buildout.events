@@ -1,6 +1,12 @@
 1.4.12 (unreleased)
 -------------------
 
+- imio.events.core 1.2.33
+
+    - WEB-4234  : Fix LookupError when querying on events without fullobjects=1 in querystring
+    (old/bad occurences refer to old event UID)
+    [boulch]
+
 - imio.smartweb.locales 1.1.29
 
     - Update dev environment to Plone 6.1-latest
