@@ -1,7 +1,12 @@
 1.4.12 (unreleased)
 -------------------
 
-- imio.events.core 1.2.33
+- imio.events.core 1.2.35
+
+    - Use fullobjects=1 when we want to get only one event
+      [boulch]
+
+- imio.events.core 1.2.34
 
     - WEB-4234  : Fix LookupError when querying on events without fullobjects=1 in querystring
     (old/bad occurences refer to old event UID)
