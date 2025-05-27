@@ -1,7 +1,10 @@
 1.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.36
+
+    - WEB-4264 : Fix has_leadmage metadata_field
+      [boulch]
 
 
 1.5.1 (2025-05-26)
