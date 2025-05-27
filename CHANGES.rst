@@ -1,7 +1,11 @@
 1.5.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.37
+
+    - WEB-4270 : Mark event as dirty when modifying selected agendas
+      Ensures that initial values in the TranslatedAjaxSelectWidget are correctly updated
+      [remdub]
 
 
 1.5.2-quick (2025-05-27)
