@@ -1,7 +1,10 @@
 1.5.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.38
+
+    - WEB-4251 : Fix bug when we get a whole day event. On the day, these events don't appear!
+      [boulch]
 
 
 1.5.3 (2025-05-27)
