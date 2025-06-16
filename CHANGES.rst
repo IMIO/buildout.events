@@ -1,7 +1,10 @@
 1.5.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.39
+
+   - CITI-8 : Fix images for citizen space in e-guichet
+     [boulch]
 
 
 1.5.4 (2025-06-11)
