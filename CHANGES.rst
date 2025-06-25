@@ -1,7 +1,24 @@
 1.5.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.smartweb.common 1.2.36
+
+    - WEB-4278 : Create translated (de) iam vocabulary for e-guichet (citizen project)
+      [boulch]
+
+    - WEB-4278 : Create translated (de) topics vocabulary for e-guichet (citizen project)
+      [boulch]
+
+    - WEB-4269 : Add Horizontal Rule option to the insert menu in TinyMCE
+      [remdub]
+
+- imio.events.core 1.2.40
+
+    - WEB-4278 : Create translated (de) collective.taxonomy.event_public taxonomy as EventPublicDe vocabulary for e-guichet (citizen project)
+      [boulch]
+
+    - SUP-45270 : Don't set end date when undetermined end date is set to True (open_end property)
+      [boulch]
 
 
 1.5.5 (2025-06-16)
@@ -9,8 +26,8 @@
 
 - imio.events.core 1.2.39
 
-   - CITI-8 : Fix images for citizen space in e-guichet
-     [boulch]
+    - CITI-8 : Fix images for citizen space in e-guichet
+      [boulch]
 
 
 1.5.4 (2025-06-11)
