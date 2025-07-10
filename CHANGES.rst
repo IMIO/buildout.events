@@ -1,6 +1,11 @@
 1.5.7 (unreleased)
 ------------------
 
+- imio.events.core 1.2.42
+
+    - CITI-10 : Add new translated (de) vocabularies for e-guichet
+      [boulch]
+
 - imio.events.core 1.2.41
 
     - SUP-45754 : Fix (another) bug when we get whole day events
