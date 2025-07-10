@@ -1,7 +1,10 @@
 1.5.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.41
+
+    - SUP-45754 : Fix (another) bug when we get whole day events
+      [boulch]
 
 
 1.5.6 (2025-06-25)
