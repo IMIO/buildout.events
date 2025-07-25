@@ -1,7 +1,8 @@
 1.5.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add migration to Keycloak.
+  [bsuttor]
 
 
 1.5.7 (2025-07-10)
