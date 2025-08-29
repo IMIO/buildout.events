@@ -1,7 +1,10 @@
 1.5.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.policy 1.1.7
+
+    - KEYC-23 : Add upgrade step to install kimug
+      [bsuttor]
 
 
 1.5.7 (2025-07-10)
