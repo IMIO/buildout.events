@@ -1,7 +1,10 @@
 1.6.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.smartweb.common 1.2.37
+
+    - Add new @find endpoint to find content in instance
+      [boulch]
 
 
 1.6.0 (2025-08-29)
