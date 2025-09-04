@@ -1,6 +1,15 @@
 1.6.1 (unreleased)
 ------------------
 
+- pas.plugins.imio 3.0.0
+
+    - Rename views to legacy
+      So we avoid calling them by mistake.
+      [remdub]
+
+    - Remove usergroups_useroverview override
+      [remdub]
+
 - imio.smartweb.common 1.2.37
 
     - Add new @find endpoint to find content in instance
