@@ -1,6 +1,14 @@
 1.6.1 (unreleased)
 ------------------
 
+- imio.events.core 1.2.43
+
+    - SUP-46571: Correct handling of "min" range for event recurrences
+      [boulch]
+
+    - CITI-10 : Add (de) translation for event_public taxonomy and for event types vocabulary
+      [boulch]
+
 - pas.plugins.imio 3.0.0
 
     - Rename views to legacy
