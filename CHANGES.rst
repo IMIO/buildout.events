@@ -1,7 +1,10 @@
 1.6.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- pas.plugins.kimug 1.1.5
+
+    - Upgrade-step to clean authentic users
+      [remdub]
 
 
 1.6.1 (2025-09-08)
