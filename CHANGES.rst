@@ -1,6 +1,31 @@
 1.6.3 (unreleased)
 ------------------
 
+- pas.plugins.kimug 1.3.0
+
+    - Skip OIDC settings configuration when Plone site or OIDC plugin is unavailable
+      [remdub]
+
+    - Set "came_from" session variable from HTTP_REFERER instead of came_from request.
+      [bsuttor]
+
+    - In controlpanel status, check if the redirect_uris set in Keycloak match the ones set in the OIDC plugin.
+      [remdub]
+
+    - Set OIDC settings from environment variables on instance boot
+      [remdub, bsuttor]
+
+- pas.plugins.kimug 1.2.0
+
+    - Add controlpanel
+      [remdub]
+
+    - Add a view to set OIDC settings
+      [remdub]
+
+    - Add a view to import Keycloak users to Plone.
+      [bsuttor]
+
 - imio.smartweb.common 1.2.38
 
     - @find : Process None value in a field or ["None", "other value"] for agatha stats
