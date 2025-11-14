@@ -1,7 +1,14 @@
 1.6.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.44
+
+    - SUP-38561 : Refactored deletion checks: ignore news items when counting
+      apply restriction only to news folders or folders containing items.
+      [boulch]
+
+    - Migrate to Plone 6.1.3
+      [boulch]
 
 
 1.6.5 (2025-11-05)
