@@ -1,6 +1,22 @@
 1.6.6 (unreleased)
 ------------------
 
+- imio.smartweb.locales 1.1.30 => 1.1.34
+
+    - Update/Add translations
+      [boulch]
+
+- imio.smartweb.common 1.2.41
+
+    - IAK-77 : IPA : Change icon with omnia set
+      [thomlamb]
+
+    - IAK-77 : IPA : Add new header to queries + some Refactoring
+      [boulch]
+
+    - IAK-77 : IPA : Add IA buttons to TinyMCE + fix payload
+      [boulch]
+
 - imio.events.core 1.2.44
 
     - SUP-38561 : Refactored deletion checks: ignore news items when counting
@@ -10,15 +26,15 @@
     - Migrate to Plone 6.1.3
       [boulch]
 
-
-1.6.5 (2025-11-05)
-------------------
-
 - imio.smartweb.common 1.2.40
 
     - Catch Exception on geocoding to avoid blocking content creation
       if geopy service is down
       [remdub]
+
+
+1.6.5 (2025-11-05)
+------------------
 
 - pas.plugins.kimug 1.4.0
 
