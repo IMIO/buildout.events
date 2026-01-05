@@ -1,4 +1,4 @@
-1.6.8 (unreleased)
+1.6.8 (2026-01-05)
 ------------------
 
 - imio.smartweb.locales 1.1.36
