@@ -1,7 +1,13 @@
 1.6.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.45
+
+    - WEB-4257 : improve tests to avoid data leak in some requests
+      [boulch]
+
+    - WEB-4300 : Add upgrade step to delete plone.eventattendees behavior.
+      [thomlamb]
 
 
 1.6.7 (2025-12-11)
