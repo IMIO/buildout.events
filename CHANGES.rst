@@ -1,6 +1,16 @@
 1.6.8 (unreleased)
 ------------------
 
+- imio.smartweb.locales 1.1.36
+
+    - SUP-49098 : correct spelling "de" translation
+      [boulch]
+
+- imio.smartweb.locales 1.1.35
+
+    - Add some new (fr, de, nl) translations (i.a.)
+      [thomlamb]
+
 - imio.events.core 1.2.45
 
     - WEB-4257 : improve tests to avoid data leak in some requests
