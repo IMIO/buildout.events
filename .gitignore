@@ -39,3 +39,4 @@ pip-selfcheck.json
 pyvenv.cfg
 report.html
 .lock
+.DS_Store
