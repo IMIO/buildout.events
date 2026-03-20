@@ -1,6 +1,22 @@
 1.6.9 (unreleased)
 ------------------
 
+- imio.events.core 1.2.46
+
+    - OIA-109 : OMNIA : Add ia "CategorizeContent" and titles proposal generation features on imio.events.Event
+      [boulch]
+
+- imio.smartweb.common 1.2.42 to 1.2.48
+
+    - WEB-3859 : "Instance-level cached" statics vocabularies
+      [boulch]
+
+    - Migrate to Plone 6.1.4
+      [boulch]
+
+    - OIA-109 : OMNIA : Improve handling of "Not enough content to categorize" message for imio.directory.Contact
+      [boulch]
+
 - Upgrade buildout to Plone 6.1.4
   [boulch]
 
