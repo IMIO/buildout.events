@@ -1,6 +1,11 @@
 1.6.9 (unreleased)
 ------------------
 
+- imio.smartweb.common 1.2.49
+
+    - OIA-109 : OMNIA : Add custom logo for TinyMCE IA Accessible button
+      [thomlamb]
+
 - WEB-4366 : Increase target number of objects in memory per cache
   [boulch]
 
