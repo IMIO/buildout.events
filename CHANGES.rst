@@ -1,6 +1,9 @@
 1.6.9 (unreleased)
 ------------------
 
+- WEB-4366 : Increase target number of objects in memory per cache
+  [boulch]
+
 - imio.events.core 1.2.46
 
     - OIA-109 : OMNIA : Add ia "CategorizeContent" and titles proposal generation features on imio.events.Event
