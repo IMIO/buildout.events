@@ -1,7 +1,10 @@
 1.6.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.47
+
+    - WEB-4353 : Feat: switch portal timezone from UTC to Europe/Brussels and push all published events to ODWB after commit
+      [boulch]
 
 
 1.6.9 (2026-03-30)
