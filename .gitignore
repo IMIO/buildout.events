@@ -40,3 +40,4 @@ pyvenv.cfg
 report.html
 .lock
 .DS_Store
+.envrc
