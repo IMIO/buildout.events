@@ -1,7 +1,13 @@
 1.6.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.48
+
+    - SUP-52831 : Fix @events range=min to return ongoing and open_end events
+      [boulch]
+
+    - Fix a bug in BringEventIntoAgendasForm and improve tests
+      [boulch]
 
 
 1.6.10 (2026-04-13)
