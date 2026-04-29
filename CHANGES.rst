@@ -1,7 +1,11 @@
 1.6.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.49
+
+    - SUP-52831 : Fix @events ?event_dates.range=min dropping future events when the agenda has many past events.
+      Restore the event_dates catalog filter (with a 1-year permissive lower bound to keep ongoing/open_end events) and replace the hardcoded b_size=400 by the actual resultset length so the serializer never truncates.
+      [boulch]
 
 
 1.6.11 (2026-04-28)
