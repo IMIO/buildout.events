@@ -1,7 +1,10 @@
 1.6.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.50
+
+    - WEB-4426 : fix: prevent child items truncation when querying events by UID
+      [thomlamb]
 
 
 1.6.12-quick (2026-04-29)
