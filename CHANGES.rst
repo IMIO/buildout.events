@@ -1,4 +1,4 @@
-1.6.15 (unreleased)
+1.6.15 (2026-06-08)
 -------------------
 
 - Temporary pin pas.plugins.kimug to 1.4.3 to avoid issues with the new version in production
