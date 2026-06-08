@@ -1,6 +1,11 @@
 1.6.14 (unreleased)
 -------------------
 
+- imio.events.core 1.2.51
+
+    - WEB-4427 : Fix a bug when whole_day for only 1 day
+      [boulch]
+
 - pas.plugins.kimug 1.6.0
 
   - Refactor the control panel so SSO applications (apps) settings can be configured easily.
