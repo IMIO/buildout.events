@@ -1,7 +1,8 @@
 1.6.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Temporary pin pas.plugins.kimug to 1.4.3 to avoid issues with the new version in production
+  [remdub]
 
 
 1.6.14 (2026-06-08)
