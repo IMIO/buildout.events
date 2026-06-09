@@ -1,7 +1,15 @@
 1.6.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- pas.plugins.kimug 1.6.2
+
+    - Don't crash startup when the `pas.plugins.kimug.log` registry record is missing on a not-yet-upgraded site. The `set_oidc_settings` subscriber now skips writing the record when it isn't registered, instead of raising `InvalidParameterError` and preventing the instance from booting.
+      [remdub]
+
+- pas.plugins.kimug 1.6.1
+
+    - Make the `oidc` plugin handle the interactive login challenge instead of `oidc_sso_apps`. The `oidc_sso_apps` plugin is now removed from `IChallengePlugin` (it only validates Bearer tokens), and upgrade step 1004→1005 fixes already-installed sites.
+      [remdub]
 
 
 1.6.15 (2026-06-08)
