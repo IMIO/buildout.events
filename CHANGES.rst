@@ -1,20 +1,10 @@
 1.6.16 (unreleased)
 -------------------
 
-- pas.plugins.kimug 1.6.3
+- pas.plugins.kimug 1.6.0 => 1.7.0
 
-    - Fix auto-created SSO users having no email or name: `_ensure_user_exists` was reading Keycloak Admin-API field names (`username`, `firstName`, `lastName`, `id`) from the JWT, but tokens carry OIDC claim names (`preferred_username`, `given_name`, `family_name`, `sub`). User properties are now populated from the correct claims, and the `{username}@kimug.be` fallback works again.
-      [remdub]
-
-- pas.plugins.kimug 1.6.2
-
-    - Don't crash startup when the `pas.plugins.kimug.log` registry record is missing on a not-yet-upgraded site. The `set_oidc_settings` subscriber now skips writing the record when it isn't registered, instead of raising `InvalidParameterError` and preventing the instance from booting.
-      [remdub]
-
-- pas.plugins.kimug 1.6.1
-
-    - Make the `oidc` plugin handle the interactive login challenge instead of `oidc_sso_apps`. The `oidc_sso_apps` plugin is now removed from `IChallengePlugin` (it only validates Bearer tokens), and upgrade step 1004→1005 fixes already-installed sites.
-      [remdub]
+    - KEYC-77 : SSO-apps migration
+      [remdub, bsuttor]
 
 
 1.6.15 (2026-06-08)
