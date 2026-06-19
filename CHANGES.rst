@@ -1,7 +1,13 @@
 1.6.19 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.policy 1.1.8
+
+    - KEYC-77: Remove pas.plugins.imio from dependencies
+      [remdub]
+
+    - Migrate to Plone 6.1.3
+      [boulch]
 
 
 1.6.18-quick (2026-06-18)
