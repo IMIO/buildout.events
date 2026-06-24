@@ -1,7 +1,15 @@
 1.6.21 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.smartweb.common 1.2.55
+
+    - Resolve the directory base URL for the remote entities vocabulary from the
+      ``imio.smartweb.common.directory_url`` registry record (falls back to the
+      ``DIRECTORY_URL`` env var / default).
+      [boulch]
+
+    - Reduce ``@search`` ``b_size`` to 3000.
+      [boulch]
 
 
 1.6.20-quick (2026-06-23)
@@ -15,15 +23,6 @@
 1.6.19 (2026-06-23)
 -------------------
 
-- imio.smartweb.common 1.2.55
-
-    - Resolve the directory base URL for the remote entities vocabulary from the
-      ``imio.smartweb.common.directory_url`` registry record (falls back to the
-      ``DIRECTORY_URL`` env var / default).
-      [boulch]
-
-    - Reduce ``@search`` ``b_size`` to 3000.
-      [boulch]
 
 - pas.plugins.kimug 1.8.0
 
