@@ -1,6 +1,11 @@
 1.6.21 (unreleased)
 -------------------
 
+- imio.smartweb.locales 1.1.36 => 1.1.43
+
+  - Update/Add translations
+    [boulch]
+
 - imio.smartweb.common 1.2.55
 
     - Resolve the directory base URL for the remote entities vocabulary from the
