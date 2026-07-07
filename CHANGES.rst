@@ -1,6 +1,17 @@
 1.6.21 (unreleased)
 -------------------
 
+- imio.smartweb.locales 1.1.44
+
+    - Update to Plone 6.1.5 and buidlout 5-x versions.
+      [boulch]
+
+    - Update some translations for events' "Main contact" in agenda
+      [boulch]
+
+    - Update translations
+      [boulch]
+
 - imio.events.core 1.2.52
 
     - Update to Plone 6.1.5 and buidlout 5-x versions
