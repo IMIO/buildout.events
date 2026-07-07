@@ -1,6 +1,110 @@
 1.6.21 (unreleased)
 -------------------
 
+- imio.events.core 1.2.52
+
+    - Update to Plone 6.1.5 and buidlout 5-x versions
+
+    - WEBBDC-2831 : Update some fields descriptions
+      [boulch]
+
+    - WEBBDC-2831 : Add links to create a new contact in the directory
+      [boulch]
+
+    - WEBBDC-2831 : Add link to edit the linked contact in the directory
+      [boulch]
+
+    - WEBBDC-2831 : Fix intermittently empty event_sponsors
+      Fix RemoteDirectoryContact vocabulary cache key (per-entity cache key)
+      [boulch]
+
+    - WEBBDC-2831 : Add auto-filed-contact class to improve autofiled field styles
+      [thomaslamb]
+
+    - WEBBDC-2831 : Auto-expand "address" fieldset on contact selection
+      [boulch]
+
+    - WEBBDC-2831 : Add description on "address" fieldset
+      [boulch]
+
+    - WEBBDC-2831 : Move "event_url" (from plone.app.event's IEventContact behavior) right below the description
+      [boulch]
+
+    - WEBBDC-2831 : Remove cleanBtn. Linked contact is cleaned thank to onChange event on directory_linked_contact select field
+      [boulch]
+
+    - SUP-47733 : Add cancel button to event add/edit forms
+      [thomlamb]
+
+    - WEBBDC-2803 : Add a new "Parteners" fieldset to imio.events.Event
+      [thomlamb]
+
+    - WEBBDC-2803 : Auto-fill Event contact/address from linked directory contact
+      When the user picks an entry in ``directory_linked_contact``, fetch the
+      remote contact via a new ``@@directory_contact_info`` view and populate
+      the IEventContact (name/email/phone) and IAddress inputs. 
+      Existing values are never overwritten; a "Clear" button wipes those fields.
+      The JS is shipped via a new ``imio-events-core-edit`` Plone bundle restricted to logged-in members.
+      [boulch]
+
+    - WEBBDC-2803 : Reorganize imio.events.Event fieldsets (and fields order)
+      Move the geolocation field into "address" and the change-note field into
+      "settings" (stripping IVersionable's ``order_after`` rule that would undo it).
+      Place ``directory_linked_contact`` just before ``contact_name``. 
+      Pin explicit order on the "address" and "categorization" fieldsets.
+      [boulch]
+
+    - WEBBDC-2803 : Add RemoteDirectoryContact vocabulary for Event
+      Register ``imio.events.vocabulary.RemoteDirectoryContact``, which queries
+      the Smartweb directory for contacts scoped to the parent Entity's ``directory_linked_entities``.
+      Reorder Event behaviors to align tab order with the new fieldset layout.
+      [boulch]
+
+- imio.smartweb.common 1.2.56
+
+    - update to Plone 6.1.5 and buidlout 5-x versions
+      [bouch]
+
+    - OIA-106: Remove the legacy IA TinyMCE plugins SELECTIVELY in the 1039->1040
+      upgrade (Python handler) instead of purging the whole ``plone.custom_plugins``
+      list, so plugins appended by other add-ons (e.g. ``omnia`` from
+      imio.omnia.tinymce) are preserved regardless of upgrade ordering.
+      [boulch]
+
+    - OIA-106 : Remove the IA tools from TinyMCE (custom plugins, IA menu and toolbar button),
+      unregister the ``tinymce.js`` resource and drop the now-unused JS files.
+      Upgrade step 1039 -> 1040.
+      [boulch]
+
+    - OIA-106 : Get the IA service URL and authentication from ``imio.omnia.core``
+      (``IOmniaCoreAPIService`` adapter) instead of the local ``IPA_URL`` /
+      ``APPLICATION_ID`` / ``PROJECT_ID`` constants, which are removed from
+      ``config.py``. Impacts the suggested titles / categorization views and the
+      categorization widget.
+      [boulch]
+
+    - OIA-106 : Pre-fill the ``imio.omnia.core`` control panel fields
+      ``application_id`` and ``organization_id`` from the legacy ``application_id``
+      and ``PROJECT_ID`` env vars (on install and via upgrade step 1040 -> 1041),
+      unless already set.
+      [boulch]
+
+    - OIA-106 : Set the ``imio.omnia.core`` control panel default settings
+      (``core_api_url`` and ``enable_proxy``) on install and via upgrade step
+      1041 -> 1042. Configuration moved from ``imio.smartweb.policy``.
+      [boulch]
+
+- imio.events.policy 1.1.9
+
+    - Update to Plone 6.1.5 and buidlout 5-x versions.
+      [boulch]
+
+    - OIA-106 : Install and use imio.omnia.tinymce
+      [boulch]
+
+    - Migrate to Plone 6.1.4
+      [boulch]
+
 - Update to Plone 6.1.5 and buidlout 5-x versions.
   [boulch]
 
