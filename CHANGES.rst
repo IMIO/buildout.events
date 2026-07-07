@@ -1,6 +1,9 @@
 1.6.21 (unreleased)
 -------------------
 
+- Update to Plone 6.1.5 and buidlout 5-x versions.
+  [boulch]
+
 - imio.smartweb.locales 1.1.36 => 1.1.43
 
   - Update/Add translations
