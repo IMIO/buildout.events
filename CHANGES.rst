@@ -1,7 +1,14 @@
 1.6.23 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.53
+
+    - WEB-4468 : Perf @events : close the upper end of the ``event_dates`` catalog window for
+      ``event_dates.range=min``. An open-ended ``range: min`` made the catalog load
+      one persistent IITreeSet per indexed day: 18,409 ZODB loads per query, now
+      3,816 for an identical resultset (2,311 instead of 17,552 when filtering on
+      an agenda).
+      [boulch]
 
 
 1.6.22 (2026-07-26)
