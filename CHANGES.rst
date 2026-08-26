@@ -1,7 +1,28 @@
 1.6.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.54
+    - ``@events`` : return a 400 for invalid ``b_size``/``b_start`` parameters.
+      [boulch]
+
+    - Contacts vocabulary : search directory contacts on demand, limited to 20 results.
+      [boulch]
+
+    - ODWB : reduce push/delete endpoint logs while keeping warnings.
+      [boulch]
+
+    - WEBBDC-2831 : Contact autofill : always show the "Refresh" button when a contact is
+      selected. It is no longer hidden by the ``SHOW_DIRECTORY_LINKS`` kill-switch (which
+      now only covers the links going to the remote directory), because it was the only way
+      to (re)pull data for an already-linked contact : re-picking the same option in a
+      native ``<select>`` fires no ``change`` event and the edit form does not autofill on
+      load.
+      [boulch]
+
+    - Contact autofill : drop the dead NBSP-stripping logic on ``zipcode``. It assumed
+      z3c.form's ``IntegerDataConverter`` inserted a thousand separator, but
+      ``IAddress.zipcode`` is a ``TextLine`` (it used to be an ``Int``).
+      [boulch]
 
 
 1.6.23 (2026-08-17)
