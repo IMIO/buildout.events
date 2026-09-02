@@ -1,7 +1,16 @@
 1.6.25 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.55
+
+    - Contact autofill : fix the fields never being filled for non-Manager editors.
+      ``@@directory_contact_info`` / ``@@directory_entities_info`` required
+      ``cmf.ModifyPortalContent``, but the edit-form JS calls the first one on the
+      portal root, where an editor holding only local roles on an Entity has no
+      modify right : Plone answered with the insufficient-privileges page (HTTP 200
+      + HTML) and the autofill silently gave up. Both views now use ``zope2.View``
+      and refuse anonymous callers themselves.
+      [boulch]
 
 
 1.6.24 (2026-08-27)
