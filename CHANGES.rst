@@ -1,7 +1,18 @@
 1.6.26 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.56
+
+    - Main contact : fix "Constraint not satisfied" when saving an Event with a
+      contact selected. ``directory_linked_contact`` is a single-valued Choice on a
+      TranslatedAjaxSelectWidget, a combination plone.app.z3cform has no data
+      converter for (it only covers ICollection), so z3c.form fell back to
+      ``Choice.fromUnicode()`` on the unbound field, which resolves the vocabulary
+      with a ``None`` context -- always empty for a vocabulary that needs the parent
+      Entity. Added ``AjaxSelectChoiceDataConverter``, which resolves the token
+      through the widget's own vocabulary. The scoping to the Entity's linked
+      directory entities is unchanged : an out-of-scope contact is still refused.
+      [boulch]
 
 
 1.6.25 (2026-09-02)
