@@ -1,7 +1,66 @@
 1.6.27 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- imio.events.core 1.2.57
+
+    - Geolocation : stop blanking ``geolocation`` in the ``@events`` endpoint when a
+      ``UID`` is queried. That switches the endpoint to ``fullobjects``, where the
+      catalog columns ``latitude``/``longitude`` are absent.
+      [boulch]
+
+    - WEBBDC-2790 : Consume the remote directory contact vocabulary, the ``Choice``/ajax-select
+      converter, the two proxy views (``@@directory_contact_info`` and
+      ``@@directory_entities_info``) and the contact autofill script now shared in
+      ``imio.smartweb.common`` (also consumed by ``imio.news.core``), instead of this
+      package's own copies. No functional change for this package. Bumps the
+      ``imio.events.core:default`` profile from 1026 to 1027 -- run the upgrade step,
+      otherwise the autofill silently stops working.
+      [boulch]
+
+- imio.smartweb.common 1.2.60
+
+    - WEBBDC-2790 : Move the remote directory contact vocabulary, the ``Choice``/ajax-select
+      converter, the two proxy views (``@@directory_contact_info`` and
+      ``@@directory_entities_info``) and the contact autofill script here from
+      ``imio.events.core``, so both ``imio.events.core`` and ``imio.news.core`` can share
+      them. ``get_directory_url()`` is now used by every caller, so the
+      ``imio.smartweb.common.directory_url`` registry override is honoured consistently.
+      [boulch]
+
+    - WEB-4485 : Restore the ``plone.content_css`` purge lost in 1.2.29, which let the
+      TinyMCE ``importcss`` plugin re-add the barceloneta ``.highlight-inline`` and
+      ``p.highlight-paragraph`` styles to the Formats menu.
+      [boulch]
+
+
+- imio.smartweb.common 1.2.59
+
+    - WEB-4461 : Add a "Save and publish" button on the add and edit forms, enabled per content
+      type through the new ``imio.smartweb.save_and_publish`` behavior. The button is
+      only offered to users who may actually publish: on the add form the workflow
+      guard is checked against the container, so an editor without the publication
+      permission never sees the button
+      [boulch]
+
+
+- imio.smartweb.common 1.2.58
+
+    - Remove the ``TokenAuthCoreAPIService`` adapter (WEB-4373 workaround): since
+      imio.omnia.core 1.0 (OIA-241) the Omnia Core API authenticates itself with a
+      Keycloak SSO-Apps token, and authlib overwrites the ``Authorization`` header
+      we injected, so the adapter only spent an extra ``imio.helpers.ws``
+      token round-trip per request. Drops the ``imio.helpers`` dependency and
+      requires ``imio.omnia.core >= 1.0``.
+      [boulch]
+
+    - Cache (per language) the remote directory entities vocabulary for 300s
+      Memoize the German topics and iam vocabularies
+      [boulch]
+
+    - Fix registry export (control panel / GenericSetup) crashing with
+      ``TypeError: Argument must be bytes or unicode, got 'NoneType'`` on
+      interface-aware records without a fieldName (e.g. ``smartweb.icon.*``)
+      [boulch]
 
 
 1.6.26 (2026-09-03)
