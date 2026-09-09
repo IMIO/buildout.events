@@ -1,6 +1,11 @@
 1.6.27 (unreleased)
 -------------------
 
+- imio.smartweb.locales 1.1.44 => 1.1.47
+
+    - Add translations for section alignment (fr/nl/de)
+    [thomlamb]
+
 - imio.events.core 1.2.57
 
     - Geolocation : stop blanking ``geolocation`` in the ``@events`` endpoint when a
@@ -54,7 +59,10 @@
       [boulch]
 
     - Cache (per language) the remote directory entities vocabulary for 300s
-      Memoize the German topics and iam vocabularies
+      Memoize the German - imio.smartweb.locales 1.1.47
+
+    - Add translations for section alignment (fr/nl/de)
+    [thomlamb]topics and iam vocabularies
       [boulch]
 
     - Fix registry export (control panel / GenericSetup) crashing with
