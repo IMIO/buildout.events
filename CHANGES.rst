@@ -1,6 +1,21 @@
 1.6.28 (unreleased)
 -------------------
 
+- imio.smartweb.locales 1.1.47 => 1.1.51
+
+    - Add some translations for smartweb instances
+      [boulch]
+
+    - Update translations
+      [boulch]
+
+- imio.events.core 1.2.59
+
+    - Fix the period filters of ``@events`` ("This weekend", "This week", "This month"
+      and custom period). A recurring event that started more than one year ago is now
+      in the results. Before, its occurrences stopped one year after its first date.
+      [boulch]
+
 - imio.smartweb.common 1.2.63
 
     - WEB-4404 : Add a ``lastBan`` ETag component, the time of the site's last
