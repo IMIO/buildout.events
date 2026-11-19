@@ -10,6 +10,13 @@
   OpenTelemetry tracing (inactive until ``OTEL_EXPORTER_OTLP_ENDPOINT`` is set).
   [boulch]
 
+- WEB-4533 : Add ``make test``: build the production image, boot it with Postgres, Solr and
+  memcached, and run smoke tests (``IMIO/gha`` ``plone-image-test-notify`` checks plus
+  ``tests/test_events.py``). CI runs them on pull requests. ``plone62.yml`` builds the
+  ``plone62`` image, tests it and only then tags it ``:plone62``. Add the Plone 6.2
+  migration guide (``docs/plone62-migration.md``)
+  [remdub]
+
 
 1.6.29 (2026-11-12)
 -------------------
