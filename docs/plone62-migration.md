@@ -13,9 +13,9 @@ Last updated: 2026-11-19.
 
 ## Status
 
-**17 packages checked out**: **5 released and pinned** (their checkout can
-go) · **2 merged**, not released · **4 PRs open** · **6 branches pushed**, no
-PR yet
+**17 packages**: **1 done** (released, pinned, no longer checked out) · **4
+released and pinned**, still checked out (their checkout can go) · **2
+merged**, not released · **4 PRs open** · **6 branches pushed**, no PR yet
 
 ✅ done · ⬜ to do · ➖ not applicable · 🚧 its pinned release calls
 `pkg_resources` and fails on Plone 6.2.3 · ⚠️ see [What's left](#clean-up-the-checkouts)
@@ -34,7 +34,7 @@ PR yet
 | [collective.fingerpointing](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectivefingerpointing) 🚧 | dev, prod | `master` | [#110](https://github.com/collective/collective.fingerpointing/pull/110) | ✅ | ⬜ | ⬜ |
 | [collective.privacy](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectiveprivacy) 🚧 | dev, prod | `plone62` | [#22](https://github.com/collective/collective.privacy/pull/22) | ⬜ | ⬜ | ⬜ |
 | [collective.upgrade](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectiveupgrade) | dev, prod | `plone61` | [#20](https://github.com/collective/collective.upgrade/pull/20) | ⬜ | ⬜ | ➖ |
-| [collective.messagesviewlet](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectivemessagesviewlet) ⚠️ | prod | `plone62` (deleted) | [#24](https://github.com/collective/collective.messagesviewlet/pull/24) | ✅ | 2.0.0 | ✅ |
+| [collective.messagesviewlet](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectivemessagesviewlet) | ➖ | ➖ | [#24](https://github.com/collective/collective.messagesviewlet/pull/24) | ✅ | 2.0.0 | ✅ |
 | [collective.timedevents](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#collectivetimedevents) | dev, prod | `master` | [#13](https://github.com/collective/collective.timedevents/pull/13) | ✅ | 2.0.0 | ✅ |
 | [imio.gdpr](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#imiogdpr) | prod | `master` | [#5](https://github.com/IMIO/imio.gdpr/pull/5) | ✅ | 2.0.0 | ✅ |
 | [imio.smartweb.locales](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#imiosmartwebcommon-core-locales-policy) | dev, prod | `main` | [#4](https://github.com/IMIO/imio.smartweb.locales/pull/4) | ✅ | 2.0.0 | ⚠️ |
@@ -44,7 +44,8 @@ Columns:
 
 - **Checked out by**: the `auto-checkout` of `dev.cfg` (dev) and `prod.cfg`
   (prod, so the Docker image). A package checked out by prod only runs as a
-  release on a dev instance.
+  release on a dev instance. ➖: no longer checked out, the pinned release is
+  used.
 - **Branch**: the branch mr.developer checks out. It comes from this
   repository's `sources.cfg` for the five `imio.events.*`, `imio.omnia.*` and
   `imio.smartweb.common` packages, collective.upgrade and pas.plugins.kimug,
@@ -72,12 +73,12 @@ The PRs of the shared packages are tracked in the
 
 ### Clean up the checkouts
 
-- [ ] collective.messagesviewlet ⚠️, **blocks the image**: `prod.cfg` checks
-  it out from `plone62`, the branch buildout.smartweb's `sources.cfg` names,
-  which was deleted once [#24](https://github.com/collective/collective.messagesviewlet/pull/24)
-  was merged. mr.developer can't clone it, so the image no longer builds
-  (`make test`, 2026-11-19). Drop it from `prod.cfg`: buildout.smartweb pins
-  the native 2.0.0.
+- [x] collective.messagesviewlet: dropped from `prod.cfg` (2026-11-19).
+  `prod.cfg` checked it out from `plone62`, the branch buildout.smartweb's
+  `sources.cfg` names, which was deleted once
+  [#24](https://github.com/collective/collective.messagesviewlet/pull/24) was
+  merged. mr.developer couldn't clone it, so the image no longer built. The
+  image now installs the native 2.0.0 that buildout.smartweb pins.
 - [ ] collective.timedevents and imio.gdpr: drop them from `auto-checkout`.
   buildout.smartweb pins their native 2.0.0.
 - [ ] imio.smartweb.locales ⚠️: drop it from `auto-checkout` **and** remove
@@ -87,9 +88,9 @@ The PRs of the shared packages are tracked in the
 - [ ] pas.plugins.kimug: drop it from `dev.cfg`, and its line from
   `sources.cfg`, unless you are working on it. buildout.smartweb pins 2.0.0.
 - [ ] Make `dev.cfg` and `prod.cfg` check out the same packages. Today only
-  prod checks out collective.autopublishing, collective.messagesviewlet and
-  imio.gdpr, and only dev checks out pas.plugins.kimug, so a dev instance
-  doesn't run the code of the image.
+  prod checks out collective.autopublishing and imio.gdpr, and only dev
+  checks out pas.plugins.kimug, so a dev instance doesn't run the code of the
+  image.
 
 ### Release
 
@@ -168,7 +169,9 @@ tracing, inactive until `OTEL_EXPORTER_OTLP_ENDPOINT` is set.
 ### Image tests and CI
 
 As in buildout.smartweb: `make test`, `tests/`, and the `tests.yml` and
-`plone62.yml` workflows ([Testing](#testing)).
+`plone62.yml` workflows ([Testing](#testing)). Their first run found that the
+image no longer built, so `prod.cfg` no longer checks out
+collective.messagesviewlet ([details](#clean-up-the-checkouts)).
 
 ## imio.events.core and imio.events.policy
 
@@ -207,6 +210,10 @@ collective.big.bang creates the site with `imio.events.policy`. Then it runs:
 The Solr container downloads the `events` core configuration from
 buildout.smartweb when it starts, so the test needs network access.
 `tests/log_allowlist.txt` lists the log records that are expected, and why.
+
+Last run 2026-11-19, on `plone62` with collective.messagesviewlet no longer
+checked out: 13 passed (the 11 generic checks, no pending upgrade step
+included, and the 2 Events tests).
 
 **On CI**: each push to `plone62` runs `plone62.yml`. It builds the image
 once as `:{short_sha}`, tests it with `tests.yml`, scans it with trivy, and

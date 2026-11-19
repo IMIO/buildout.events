@@ -23,7 +23,10 @@ def create(admin, container_url, portal_type, title, **fields):
 
 
 def create_agenda(admin, site_url):
-    entity = create(admin, site_url, "imio.events.Entity", "Test entity")
+    # zip_codes is required: a token of the imio.smartweb.vocabulary.Cities vocabulary.
+    entity = create(
+        admin, site_url, "imio.events.Entity", "Test entity", zip_codes=["5000"]
+    )
     return entity, create(admin, entity, "imio.events.Agenda", "Test agenda")
 
 
