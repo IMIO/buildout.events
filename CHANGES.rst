@@ -1,7 +1,26 @@
 1.6.30 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-4533 : Plone 6.2.3 migration. Extend the Plone 6.2.3 pins and the
+  ``plone62`` branch of buildout.smartweb.
+  [boulch]
+
+- Add plone.observability, as in buildout.smartweb: health probes on port
+  8081 (``/live``, ``/ready``, ``/startup``), ``@@metrics`` endpoint and
+  OpenTelemetry tracing (inactive until ``OTEL_EXPORTER_OTLP_ENDPOINT`` is set).
+  [boulch]
+
+- WEB-4533 : Add ``make test``: build the production image, boot it with Postgres, Solr and
+  memcached, and run smoke tests (``IMIO/gha`` ``plone-image-test-notify`` checks plus
+  ``tests/test_events.py``). CI runs them on pull requests. ``plone62.yml`` builds the
+  ``plone62`` image, tests it and only then tags it ``:plone62``. Add the Plone 6.2
+  migration guide (``docs/plone62-migration.md``)
+  [remdub]
+
+- WEB-4533 : Pin imio.smartweb.common 2.0.0 (native namespace). The image no longer
+  checks it out, and dev checks it out from ``main``: its ``plone62`` branch was deleted
+  once merged
+  [remdub]
 
 
 1.6.29 (2026-11-12)
