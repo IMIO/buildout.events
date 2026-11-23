@@ -13,17 +13,17 @@ Last updated: 2026-11-23.
 
 ## Status
 
-**17 packages**: **8 done** (released, pinned, no longer checked out) · **1
+**17 packages**: **8 done** (released, pinned, no longer checked out) · **2
 released and pinned**, still checked out by `dev.cfg` on purpose
-(imio.smartweb.common) · **1 released**, not pinned yet (imio.events.core) ·
-**3 merged**, not released · **4 branches pushed**, no PR yet
+(imio.events.core, imio.smartweb.common) · **3 merged**, not released · **4
+branches pushed**, no PR yet
 
 ✅ done · ⬜ to do · ➖ not applicable · 🚧 its pinned release calls
 `pkg_resources` and fails on Plone 6.2.3
 
 | Package | Checked out by | Branch | PR | Merged | Released | Pinned |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
-| [imio.events.core](#imioeventscore-and-imioeventspolicy) | dev, prod | `plone62` (deleted) | [#18](https://github.com/IMIO/imio.events.core/pull/18) | ✅ | 2.0.0 | ⬜ |
+| [imio.events.core](#imioeventscore-and-imioeventspolicy) | dev | `main` | [#18](https://github.com/IMIO/imio.events.core/pull/18) | ✅ | 2.0.0 | ✅ |
 | [imio.events.policy](#imioeventscore-and-imioeventspolicy) | dev, prod | `plone62` | ⬜ | ⬜ | ⬜ | ⬜ |
 | [imio.omnia.core](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#imioomniacore) | dev, prod | `plone62` | ⬜ | ⬜ | ⬜ | ⬜ |
 | [imio.omnia.tinymce](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-packages.md#imioomniatinymce) | dev, prod | `plone62` | ⬜ | ⬜ | ⬜ | ⬜ |
@@ -116,16 +116,18 @@ The PRs of the shared packages are tracked in the
   `sources.cfg` names (`plone61` has no commit that `master` lacks).
 - [x] pas.plugins.kimug: dropped from `dev.cfg`, and its line from
   `sources.cfg` (2026-11-20). buildout.smartweb pins 2.0.0.
-- [ ] imio.events.core: its `plone62` branch was deleted once
-  [#18](https://github.com/IMIO/imio.events.core/pull/18) was merged, and
-  `sources.cfg` still names it, so mr.developer can't clone it and the next
-  image build fails. Drop it from `prod.cfg`, pin 2.0.0 in `versions.cfg` in
-  place of 1.2.60, and check out `main` in `dev.cfg` (as for
-  imio.smartweb.common).
+- [x] imio.events.core: dropped from `prod.cfg` (2026-11-23). Its `plone62`
+  branch was deleted once
+  [#18](https://github.com/IMIO/imio.events.core/pull/18) was merged, so
+  mr.developer couldn't clone it and the next image build would have failed.
+  `versions.cfg` pins 2.0.0 in place of 1.2.60, so the image installs the
+  release. `dev.cfg` still checks it out, from `main` now (this
+  repository's `sources.cfg`).
 - [x] `dev.cfg` and `prod.cfg` check out the same packages (2026-11-20):
   `dev.cfg` now checks out collective.autopublishing too, as
   buildout.smartweb does, so a dev instance runs the code of the image. Only
-  imio.smartweb.common is checked out by dev only, on purpose.
+  imio.smartweb.common is checked out by dev only, on purpose (and
+  imio.events.core since 2026-11-23).
 
 ### Release
 
@@ -138,13 +140,15 @@ git branch, so the order matters:
   `versions.cfg`. So are collective.behavior.talcondition,
   collective.fingerpointing and collective.privacy: buildout.smartweb pins
   their 2.0.0.
-- [x] imio.events.core: released as 2.0.0 (2026-11-23). It drops Plone 6.1.
+- [x] imio.events.core: released as 2.0.0 (2026-11-23) and pinned in
+  `versions.cfg`. It drops Plone 6.1. `dev.cfg` still checks it out, from
+  `main`.
 - [ ] imio.events.policy (it requires imio.events.core): release it as
   2.0.0, as the SmartWeb guide does for the other packages. Its
   `CHANGES.rst` still says 1.1.10.
-- [ ] Pin each native release in `versions.cfg`, replacing the old-style
-  pins (imio.events.core 1.2.60, imio.events.policy 1.1.9). Then drop the
-  checkout and the `sources.cfg` line.
+- [ ] Pin imio.events.policy's native release in `versions.cfg`, replacing
+  the old-style 1.1.9. Then drop it from `prod.cfg` and check out `main` in
+  `dev.cfg`.
 
 ### Check by hand on an Events site
 
@@ -220,6 +224,10 @@ too. The image installs the native 2.0.0, which `versions.cfg` pins in place
 of 1.2.65. A dev instance checks out `main`
 ([details](#clean-up-the-checkouts)).
 
+On 2026-11-23, from `prod.cfg` only: imio.events.core, for the same reason
+as imio.smartweb.common. The image installs the native 2.0.0, which
+`versions.cfg` pins in place of 1.2.60. A dev instance checks out `main`.
+
 On 2026-11-20: collective.behavior.talcondition, collective.fingerpointing,
 collective.privacy and pas.plugins.kimug, now installed from the native 2.0.0
 that buildout.smartweb pins. collective.upgrade is checked out from `master`
@@ -233,7 +241,7 @@ checks out collective.autopublishing, like `prod.cfg`.
 [IMIO/imio.events.policy](https://github.com/IMIO/imio.events.policy), branch
 `main` (core) and `plone62` (policy) · **Variant**
 [setup.py](https://github.com/IMIO/buildout.smartweb/blob/plone62/docs/native-namespaces-migration.md#the-migration-recipe)
-· **Checked out by** `dev.cfg`, `prod.cfg` · **Older stacks** (Plone 6.1) stay
+· **Checked out by** `dev.cfg` (core), `dev.cfg` and `prod.cfg` (policy) · **Older stacks** (Plone 6.1) stay
 on 1.2.x and 1.1.x
 
 Migrated by a colleague on 2026-11-18. Each branch was 3 commits ahead of
@@ -251,9 +259,8 @@ Migrated by a colleague on 2026-11-18. Each branch was 3 commits ahead of
 
 imio.events.core is merged into `main`
 ([#18](https://github.com/IMIO/imio.events.core/pull/18)) and released as
-**2.0.0** on 2026-11-23. Its `plone62` branch is deleted. `versions.cfg`
-still pins 1.2.60 and `sources.cfg` still names `plone62`
-([to do](#clean-up-the-checkouts)). imio.events.policy is still on its
+**2.0.0** on 2026-11-23. `versions.cfg` pins it, so the image installs the
+release, and `dev.cfg` checks out `main`. imio.events.policy is still on its
 `plone62` branch, no PR yet.
 
 ## Testing
